@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="converter">
+    <h1>Unit Converter</h1>
+    <form id="converter-form">
+        <label for="conversion-type">Conversion Type:</label>
+        <select id="conversion-type">
+          <option value="length">Length (meters to feet)</option>
+          <option value="weight">Weight (kilograms to pounds)</option>
+          <option value="temperature">Temperature (Celsius to Fahrenheit)</option>
+        </select>
+      
+        <label for="input-value">Input Value:</label>
+        <input type="text" id="input-value" placeholder="Enter a value (e.g., 10)" required>
+      
+        <button type="submit">Convert</button>
+      </form>
+      <p id="result">Result:</p>
+      
+
+  </div>
+  <script src="utilities.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
